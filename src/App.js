@@ -6,12 +6,6 @@ import BirthdayList from "./BirthdayList";
 function App() {
   const [birthdays, setBirthdays] = useState([
     {
-      name: "kanishk",
-      date: "2004-02-02",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU57z9aLTJXlXqOWMiyhEgIaOWkODdUZtEZA0TJ1qu4XAh58aA3dj6m593rxF7oLAGEqg&usqp=CAU",
-    },
-    {
       name: "Narendra Modi",
       date: "1950-9-17",
       image:
@@ -48,13 +42,52 @@ function App() {
   }, [birthdays]);
 
   return (
-    <div className="reminder-pannel">
-      <h1 className="heading">Birthday Reminder</h1>
-      <br />
-      <BirthdayForm addBirthday={addBirthday} />
-
-      <BirthdayList birthdays={birthdays} removeBirthday={removeBirthday} />
-    </div>
+    <>
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#">
+          <h2 className="topheading">BIRTHDAY REMINDER APP</h2>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle drop"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Add a new Birthday
+              </a>
+              <div
+                class="dropdown-menu pop"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <BirthdayForm addBirthday={addBirthday} />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div className="reminder-pannel">
+        <br />
+        <BirthdayList birthdays={birthdays} removeBirthday={removeBirthday} />
+        <br />
+      </div>
+    </>
   );
 }
 

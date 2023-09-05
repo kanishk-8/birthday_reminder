@@ -1,6 +1,6 @@
 body {
   background-color: #ffffff;
-  background-image: url("https://img.freepik.com/free-vector/blue-white-low-poly-triangle-shapes-background_1035-19007.jpg?w=2000");
+  background-image: url("https://img.freepik.com/free-photo/background-gradient-lights_23-2149304998.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -44,4 +44,44 @@ img {
 
 h1 {
   font-size: 80px;
+}
+
+.happy {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.info {
+  display: flex;
+  gap: 30px;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  text-align: center;
+  margin-top: 2px;
+}
+
+h2 {
+  font-weight: bold;
+  text-underline-position: below;
+}
+
+.drop {
+  margin-left: 480px;
+}
+
+.pop {
+  margin-left: 540px;
+  margin-top: 10px;
+  background-color: rgb(88, 88, 88);
+  color: white;
+  padding: 10px 14px;
+}
+.topheading {
+  font-weight: bold;
+  font-family: sans-serif;
+  justify-self: center;
+  align-self: center;
 }

@@ -17,7 +17,6 @@ function BirthdayForm({ addBirthday }) {
 
   return (
     <div className="birthday-form">
-      <h2 style={{ fontweight: "bold" }}>Add a New Birthday</h2>
       <form onSubmit={handleSubmit}>
         <input
           className="form-control"
@@ -42,8 +41,8 @@ function BirthdayForm({ addBirthday }) {
           value={image}
           onChange={(e) => setImage(e.target.value)}
         />
-
-        <button type="submit" class="btn btn-outline-success btn-block btn-sm">
+        <br />
+        <button type="submit" class="btn btn-outline-light btn-block ">
           Add Birthday to list
         </button>
       </form>

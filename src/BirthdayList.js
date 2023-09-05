@@ -2,10 +2,10 @@ import React from "react";
 
 function BirthdayList({ birthdays, removeBirthday }) {
   const yourBirthday = {
-    name: "kanishk",
-    date: "2004-02-02",
+    name: "salman khan",
+    date: "1965-09-06",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU57z9aLTJXlXqOWMiyhEgIaOWkODdUZtEZA0TJ1qu4XAh58aA3dj6m593rxF7oLAGEqg&usqp=CAU",
+      "https://pbs.twimg.com/profile_images/1562753790369218560/wtiHWrkG_400x400.jpg",
   };
   const allBirthdays = [yourBirthday, ...birthdays];
 
@@ -22,18 +22,25 @@ function BirthdayList({ birthdays, removeBirthday }) {
           return (
             <div key={index} className="birthday">
               <div className="birthday-details">
-                <img src={birthday.image} alt={`${birthday.name}'s Image`} />
-                <div>
+                <img
+                  className="rounded "
+                  src={birthday.image}
+                  alt={`${birthday.name}'s Image`}
+                />
+                <div className="info">
                   <p>{birthday.name}</p>
                   <p>{birthday.date}</p>
-                  <p>Happy birthday! May God bless you!</p>
                 </div>
+                <p className="happy">
+                  Happy birthday {birthday.name}! May God bless you!
+                </p>
                 <button
                   class="btn btn-outline-danger"
                   onClick={() => removeBirthday(birthday.name)}
                 >
                   Remove
                 </button>
+                <br />
               </div>
             </div>
           );
@@ -43,11 +50,12 @@ function BirthdayList({ birthdays, removeBirthday }) {
           <div key={index} className="birthday">
             <div className="birthday-details media">
               <img
+                className="rounded "
                 src={birthday.image}
                 alt={`${birthday.name}'s Image`}
                 style={{ width: "400px", height: "350px" }}
               />
-              <div>
+              <div className="info">
                 <p>{birthday.name}</p>
                 <p>{birthday.date}</p>
               </div>
@@ -57,6 +65,7 @@ function BirthdayList({ birthdays, removeBirthday }) {
               >
                 Remove
               </button>
+              <br />
             </div>
           </div>
         );
