@@ -1,6 +1,6 @@
 body {
-  background-color: #ffffff;
-  background-image: url("https://img.freepik.com/free-photo/background-gradient-lights_23-2149304998.jpg");
+  background-color: white;
+  /* background-image: url("https://img.freepik.com/free-photo/background-gradient-lights_23-2149304998.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -53,6 +53,11 @@ h1 {
 
 .info {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 1px 10px;
+  border-radius: 20px;
   gap: 30px;
   font-size: larger;
   font-family: Arial, Helvetica, sans-serif;

@@ -35,7 +35,7 @@ function BirthdayList({ birthdays, removeBirthday }) {
                   Happy birthday {birthday.name}! May God bless you!
                 </p>
                 <button
-                  class="btn btn-outline-danger"
+                  class="btn btn-outline-danger btn-lg"
                   onClick={() => removeBirthday(birthday.name)}
                 >
                   Remove
@@ -60,7 +60,7 @@ function BirthdayList({ birthdays, removeBirthday }) {
                 <p>{birthday.date}</p>
               </div>
               <button
-                class="btn btn-outline-danger "
+                class="btn btn-outline-danger btn-lg "
                 onClick={() => removeBirthday(birthday.name)}
               >
                 Remove
