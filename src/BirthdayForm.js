@@ -19,28 +19,33 @@ function BirthdayForm({ addBirthday }) {
     <div className="birthday-form">
       <h2 style={{ fontweight: "bold" }}>Add a New Birthday</h2>
       <form onSubmit={handleSubmit}>
-        <label>Name:</label>
         <input
+          className="form-control"
           type="text"
+          placeholder="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
 
-        <label>Date:</label>
         <input
+          className="form-control"
           type="date"
+          placeholder="date-of-birth"
           value={date}
           onChange={(e) => setDate(e.target.value)}
         />
 
-        <label>Image URL:</label>
         <input
+          className="form-control"
           type="text"
+          placeholder="image-url"
           value={image}
           onChange={(e) => setImage(e.target.value)}
         />
 
-        <button type="submit">Add Birthday</button>
+        <button type="submit" class="btn btn-outline-success btn-block btn-sm">
+          Add Birthday to list
+        </button>
       </form>
     </div>
   );

@@ -6,10 +6,10 @@ import BirthdayList from "./BirthdayList";
 function App() {
   const [birthdays, setBirthdays] = useState([
     {
-      name: "Abhishek Choudhary",
-      date: "2004-01-28",
+      name: "kanishk",
+      date: "2004-02-02",
       image:
-        "https://pps.whatsapp.net/v/t61.24694-24/364525122_870467214502986_6484205720159841995_n.jpg?ccb=11-4&oh=01_AdR3ClNL7m3gWR9WvylxvRZYrZLbMDPWz95Oqqd9eh-wtw&oe=64FD42AE&_nc_cat=100",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU57z9aLTJXlXqOWMiyhEgIaOWkODdUZtEZA0TJ1qu4XAh58aA3dj6m593rxF7oLAGEqg&usqp=CAU",
     },
     {
       name: "Narendra Modi",
@@ -48,9 +48,11 @@ function App() {
   }, [birthdays]);
 
   return (
-    <div className="App">
-      <h1>Birthday Reminder</h1>
+    <div className="reminder-pannel">
+      <h1 className="heading">Birthday Reminder</h1>
+      <br />
       <BirthdayForm addBirthday={addBirthday} />
+
       <BirthdayList birthdays={birthdays} removeBirthday={removeBirthday} />
     </div>
   );

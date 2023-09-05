@@ -2,10 +2,10 @@ import React from "react";
 
 function BirthdayList({ birthdays, removeBirthday }) {
   const yourBirthday = {
-    name: "Abhishek choudhary",
-    date: "2004-01-28",
+    name: "kanishk",
+    date: "2004-02-02",
     image:
-      "https://pps.whatsapp.net/v/t61.24694-24/364525122_870467214502986_6484205720159841995_n.jpg?ccb=11-4&oh=01_AdRtVh_fUWQeJJ48MTpP2yoiKfcd1LhWmnH9BUHqrvmcOQ&oe=64F6AB2E&_nc_cat=100",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU57z9aLTJXlXqOWMiyhEgIaOWkODdUZtEZA0TJ1qu4XAh58aA3dj6m593rxF7oLAGEqg&usqp=CAU",
   };
   const allBirthdays = [yourBirthday, ...birthdays];
 
@@ -28,7 +28,10 @@ function BirthdayList({ birthdays, removeBirthday }) {
                   <p>{birthday.date}</p>
                   <p>Happy birthday! May God bless you!</p>
                 </div>
-                <button onClick={() => removeBirthday(birthday.name)}>
+                <button
+                  class="btn btn-outline-danger"
+                  onClick={() => removeBirthday(birthday.name)}
+                >
                   Remove
                 </button>
               </div>
@@ -38,7 +41,7 @@ function BirthdayList({ birthdays, removeBirthday }) {
 
         return (
           <div key={index} className="birthday">
-            <div className="birthday-details">
+            <div className="birthday-details media">
               <img
                 src={birthday.image}
                 alt={`${birthday.name}'s Image`}
@@ -48,7 +51,10 @@ function BirthdayList({ birthdays, removeBirthday }) {
                 <p>{birthday.name}</p>
                 <p>{birthday.date}</p>
               </div>
-              <button onClick={() => removeBirthday(birthday.name)}>
+              <button
+                class="btn btn-outline-danger "
+                onClick={() => removeBirthday(birthday.name)}
+              >
                 Remove
               </button>
             </div>

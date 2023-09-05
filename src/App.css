@@ -1,7 +1,47 @@
 body {
   background-color: #ffffff;
-  background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcm00NjdiYXRjaDUtc2NlbmUtdy0wMDItbDBha3pzejYuanBn.jpg?s=Q8ou_oc12RdR0CvRNnFlBeEhs-ezvTRuZV8tLeqT-iw.jpg");
+  background-image: url("https://img.freepik.com/free-vector/blue-white-low-poly-triangle-shapes-background_1035-19007.jpg?w=2000");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.reminder-pannel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.birthday-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* input {
+  margin-inline: 5px;
+} */
+
+.heading {
+  text-size-adjust: 20px;
+}
+
+.birthday-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 80px;
 }
